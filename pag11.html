@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pag11.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function showAlert() {
+        event.preventDefault();
+        const successAlert = document.getElementById("success-alert");
+        successAlert.style.display = "block";
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <section class="titulo"><a href="index.html"><img src="imagenes/pilot.png" width="150" height="150"></a> Aviones</section>
+        <section class="banner"> <img src="imagenes/avion1.gif" width="200" height="100%"></section>
+        <section class="login">
+            <Center><a href="pag11.html" class="ingresar"><img
+                        src="imagenes/login.png" width="64" height="64"><br> ingresar</a></Center>
+        </section>
+    </header>
+
+    <section class="barranavegacion">
+        <a href="pag3.html">Tipos</a>
+        <a href="pag5.html">Estructura</a>
+        <a href="pag7.html">Accesorios</a>
+        <a href="pag10.html">Coleccionables</a>
+    </section>
+
+
+
+    <div class="fondo">
+
+        <section class="derecha" bgcolor="rgba(172, 120, 214, 1);">
+            <div class="capa">
+
+                <form >
+                    <h2 style="font-family: 'Croissant One', cursive;
+                    font-weight: 800;
+                
+                    background:#fff;
+                    -webkit-background-clip: text;
+                    color: transparent; ">Bienvenido login</h2>
+                    <br>
+                    <div class="input-box">
+                        <i class="fa-solid fa-user-secret"></i> Email <br><br><input type="email" placeholder="Ingrese su email o correo registrado" required>
+                    </div>
+                    <br>
+                    <div class="input-box">
+                        <i class="fa-solid fa-key fa-bounce"></i> Contraseña <br><br><input type="password" placeholder="Ingrese su contraseña registrada"
+                            required>
+                    </div>
+                    <br>
+                     <p style="font-family: 'Croissant One', cursive;font-weight: 300;background:#fff;-webkit-background-clip: text;
+                    color: transparent; "><input type="checkbox" name="" id="" required>aceptar terminos y condiciones</p>
+                    <br>
+
+                    <button type="submit" class="btn" onclick="showAlert()"> Login</button>
+                    <div class="register-link">
+                        <p style="font-family: 'Croissant One', cursive;font-weight: 300;background:#fff;-webkit-background-clip: text;
+                        color: transparent; ">No tienes cuenta aun?<a href="pag12.html">  Registrese</a></p>
+                    </div>
+                    <div id="success-alert" class="hidden">
+                        <p>¡Inicio de sesión correcto!</p>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+
+
+    </div>
+    <footer>
+        <div class="footer-contact">
+            <p>Contacto: <a href="mailto:davidvalen34@gmail.com">davidvalen34@gmail.com</a></p>
+        </div>
+        <br><br>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/tucuenta" target="_blank"><img src="imagenes/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank"><img src="imagenes/instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com/tucuenta" target="_blank"><img src="imagenes/gorjeo.png" alt="Twitter"></a>
+        </div>
+        
+        <div class="footer-copyright">
+            <p>&copy; 2023 Aviones. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

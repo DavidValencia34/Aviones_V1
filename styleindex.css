@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+
+
+
+body{
+    background-color: #12486B;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #419197;
+    border-radius: 20px;
+    
+}
+.titulo{
+    width: 44%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 70px;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent;  
+    
+}
+
+.banner{
+    width: 28%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 28%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 20px;
+    
+     
+}
+.ingresar{
+    text-decoration: none;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.barranavegacion {
+    width: 100%;
+    height: 60px;
+    background-color: #78d6c6d5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barranavegacion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.barranavegacion a:hover {
+    background-color: #60a1c1;
+}
+.bienvenida{
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 20px;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.izquierda{
+    position: relative;
+    width: 30%;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+}
+
+
+.derechaarriba{
+    position: relative;
+    width: 70%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+
+}
+.derechacentro{
+    position: relative;
+    width: 35%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+}
+.derecha {
+    position: relative;
+    width: 35%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+}
+
+.derecha img, .derechacentro img,.izquierda img, .derechaarriba img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(172, 120, 214, 0); /* Color de fondo inicialmente transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.capa h3 {
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.derecha:hover .capa, .derechacentro:hover .capa,.derechaarriba:hover .capa, .izquierda:hover .capa{
+    background-color: rgba(0, 0, 0, 0.3); /* Color de fondo con transparencia al pasar el cursor */
+    opacity: 1; /* Mostrar el contenido al pasar el cursor */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: 120px;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .login {
+        font-size: 16px;
+    }
+
+    .barranavegacion {
+        height: 60px;
+    }
+
+    .bienvenida {
+        font-size: 16px;
+    }
+
+    .izquierda,
+    .derechaarriba,
+    .derechacentro,
+    .derecha {
+        width: 100%;
+        height: auto;
+    }
+
+    .derecha img,
+    .derechacentro img,
+    .izquierda img,
+    .derechaarriba img {
+        width: 100%;
+        height: auto;
+    }
+
+    .capa h3 {
+        font-size: 16px;
+    }
+}
+
+/* Additional styles for very small screens (e.g., mobile) */
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 30px;
+    }
+
+    .login {
+        font-size: 14px;
+    }
+}
+
+
+footer {
+    background-color: #78d6c6d5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-contact,
+.footer-social,
+.footer-navigation {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 30px; /* Ajusta el tamaño de los íconos de redes sociales según tu preferencia */
+    margin: 0 10px;
+}
+
+
+.footer-copyright {
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+

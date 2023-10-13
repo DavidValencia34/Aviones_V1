@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+
+
+
+body{
+    background-color: #12486B;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #419197;
+    border-radius: 20px;
+    
+}
+.titulo{
+    width: 44%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 70px;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent;  
+    
+}
+
+.banner{
+    width: 28%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 28%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 20px;
+    
+     
+}
+.ingresar{
+    text-decoration: none;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.barranavegacion {
+    width: 100%;
+    height: 60px;
+    background-color: #78d6c6d5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barranavegacion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.barranavegacion a:hover {
+    background-color: #60a1c1;
+}
+.bienvenida{
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 20px;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.fondo{
+    
+    width: 100%;
+    height: 900px;
+    background-image: url(imagenes/avionfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.derecha {
+    position: relative;
+    width: 50%;
+    height: 800px;
+    float: right;
+    overflow: hidden;
+    margin-right: 25%;
+    margin-top: 50px;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 145, 151, 0.7); /* Color de fondo inicialmente transparente */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+    opacity: 1; /* Inicialmente oculto */
+     
+}
+.input-box{
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+
+    background:#fff;
+    -webkit-background-clip: text;
+    color: transparent; 
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #fff;
+    font-family: 'Croissant One', cursive;
+    font-weight: 300;
+
+    background:#fff;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.input-box input::placeholder{
+    color:#fff;
+
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #F5FCCD;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(65, 145, 151, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+}
+footer {
+    background-color: #78d6c6d5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-contact,
+.footer-social,
+.footer-navigation {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 30px; /* Ajusta el tamaño de los íconos de redes sociales según tu preferencia */
+    margin: 0 10px;
+}
+
+
+.footer-copyright {
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+

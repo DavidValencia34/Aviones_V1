@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+body{
+    background-color: #12486B;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #419197;
+    border-radius: 20px;
+    
+}
+.titulo, h1{
+    width: 44%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 70px;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent;  
+    
+}
+h1{
+    padding: 2% 25%;
+}
+.banner{
+    width: 28%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 28%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    font-size: 20px;
+    
+     
+}
+.ingresar{
+    text-decoration: none;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.barranavegacion {
+    width: 100%;
+    height: 60px;
+    background-color: #78d6c6d5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barranavegacion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.barranavegacion a:hover {
+    background-color: #60a1c1;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #419197;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(120, 214, 198, 0.1);
+}
+
+.product {
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 10px;
+    margin-top: 1px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(245, 252, 205, 0.5);
+    background: linear-gradient(#12486B,#419197);
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+
+    
+}
+.product img {
+    max-width: 90%;
+}
+.product button{
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background: #F5FCCD;
+    border-radius: 20px;
+    font-family: 'Croissant One', cursive;
+    font-weight: 400;
+}
+.product h3 {
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Inicialmente visible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+    font-size: 30px;
+    font-family: 'Croissant One', cursive;
+    font-weight: 800;
+    
+    
+}
+
+.product:hover h3 {
+    opacity: 0; /* Ocultar el título al pasar el cursor */
+}
+
+
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    background-color: rgba(172, 120, 214, 0); /* Color de fondo inicialmente transparente */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flex a columna */
+    justify-content: start;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+    opacity: 0; /* Inicialmente oculto */
+    overflow-y: scroll; 
+}
+.capa::-webkit-scrollbar {
+    width: 0.5em;  /* Ancho de la barra del scroll */
+}
+
+.capa::-webkit-scrollbar-track {
+    background: transparent;  /* Fondo de la barra del scroll */
+}
+
+.capa::-webkit-scrollbar-thumb {
+    background-color: transparent;  /* Color de la barra del scroll */
+}
+
+.capa h2, .capa p, .product h3 {
+    padding: 0% 10%;
+    background: linear-gradient(#78D6C6,#F5FCCD);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.product:hover{
+    transform: scale(1.15);
+    opacity: 1;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.product:hover .capa{
+     
+    opacity: 1; /* Mostrar el contenido al pasar el cursor */
+    
+}
+footer {
+    background-color: #78d6c6d5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-contact,
+.footer-social,
+.footer-navigation {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 30px; /* Ajusta el tamaño de los íconos de redes sociales según tu preferencia */
+    margin: 0 10px;
+}
+
+
+.footer-copyright {
+    color: #fff;
+    margin-top: 20px;
+}
